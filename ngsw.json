@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1637069451771,
+  "timestamp": 1637069612171,
   "index": "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html",
   "assetGroups": [
     {
@@ -54,7 +54,7 @@
     "https://franklinbcmcodemera.github.io/pwa_angular_example/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html": "e653ad40d7e3b01beecfa1c9415ff4e96de034f1",
+    "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html": "2307d3657dba868bef29ca9180883464044d68e7",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/main.618c627c0eeb60f074b8.js": "4e59165a306d6318174a0595bc8b56edde953a4d",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/manifest.webmanifest": "63752ca03db7f4082db9a01362568c932c23d0f4",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
