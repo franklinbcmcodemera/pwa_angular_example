@@ -1,0 +1,17 @@
+<h2>{{ContactName}}</h2>
+<p>{{Phone}}</p>
+ 
+
+<div *ngIf="Contactparams">
+    <div>
+        URL Param:  <p>{{Contactparams}}</p> 
+    </div>
+
+</div>
+<div *ngIf="!Contactparams">
+    <div>
+        <button (click)="Redirect()" >Ir a la pagina que tiene Parametros</button> 
+    </div>
+
+</div>
+ 

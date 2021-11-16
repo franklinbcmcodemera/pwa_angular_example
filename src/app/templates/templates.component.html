@@ -1,0 +1,35 @@
+<h4>{{title}}</h4>
+NOTE: en el Else se usa in id del ng-template creado
+<br>
+<hr>
+<button (click)="ChangeAdm()">Change</button>
+
+<div *ngIf="admin; then IsAdmin else IsAdmin">    
+    
+</div>
+
+<ng-template #IsAdmin>
+    <div>
+        <span style="background-color: chartreuse;">You are the Administrator!</span>
+    </div>
+</ng-template>
+
+<ng-template #IsnoAdmin>
+    <div>
+        <span style="background-color: red;">You are Not the Administrator!</span>
+    </div>
+</ng-template>
+
+<hr>
+<br>
+<child-component 
+    [property_one]="data_external"
+    [Text2]="Identitys"
+    (from_child)="GetDataInfo($event);"
+
+></child-component>
+<br><br><br>
+
+
+
+

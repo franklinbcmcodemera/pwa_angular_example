@@ -1,0 +1,86 @@
+<h2 style="color: blue;">
+   {{_employee.Name}}  prueba -    Mi Arreglo:{{_employeeArr[1].Title}}
+</h2>
+<ul>
+ <li *ngFor="let item of _employee.Details; let id = index">
+    {{id}} -  {{item}}
+ </li>
+</ul>
+<ul *ngIf="_employee.DriverLicence == _Gs.GsYes">
+    <li>
+        Tiene Licencia de Conducir!
+    </li>
+</ul>
+<br />
+<br />
+<hr />
+<div style="border: solid 1px; padding: 2%;">
+    <div *ngIf="DefaultValue == _Gs.GsYes">
+        <h2 style="color:green;">First Element</h2>
+        <button (click)='DisplayChanges(false)'>Hide First</button>
+        <ul>
+            <li *ngFor="let item of _employee.Details; let idx = index">
+                {{idx}} -  {{item}}
+              </li> 
+        </ul>
+    </div>
+    
+    <div *ngIf="DefaultValue == _Gs.GsNo">
+        <h2 style="color:red;">Second Element</h2>
+        <button (click)='DisplayChanges(true)'>Hide Second</button>
+        <ul>
+            <li *ngFor="let item of _employee.Details.reverse(); let id = index">
+                Employee: {{id}}
+                <ol>
+                    <li>{{_employee.Name}}</li>
+                    <li>{{_employee.Title}}</li>
+                    <li>{{_employee.Age + id}}</li>
+                    <li> {{item}}</li>
+                </ol>
+            </li>
+        </ul>
+
+    </div>
+</div>
+ 
+<br />
+<br />
+<hr />
+<br />
+<br />
+<div>
+    <h3 [style.border]="CustColor == 'red'? '1px solid': '' " >Color Switch</h3>
+    <button (click)="ChangeColor()">Switch Color</button>
+    <ul [ngSwitch]="CustColor" >
+        <li *ngSwitchCase="'red'" [ngStyle]="{background:CustColor, color:'white', padding:'20px'}" >Red Color</li>
+        <li *ngSwitchCase="'green'" [ngStyle]="{background:'green', color:'white', padding:'20px'}" >Red Color</li>
+        <li *ngSwitchCase="'blue'" [ngStyle]="{background:'blue', color:'white', padding:'20px'}" >Red Color</li>
+        <li *DefaultCase [ngStyle]="{background:'orange', color:'white', padding:'20px'}" >Default Color</li>
+    </ul>
+
+</div>
+<div>
+    <h3 [style.border]="CustColor == 'red'? '1px solid': '2px solid green' " [class.blueBorder] ="CustColor == 'red' ">Text Color Switch</h3>
+    <h3 [ngClass]="{
+        greenBorder: CustColor == 'red',
+        blueBorder: CustColor == 'orange'
+    
+    }">Text Color Other</h3>
+    <h3 [ngClass]="[
+        'custClass',
+        'custOtherClass'
+        ]">Other Way</h3>
+
+    <select [(ngModel)]="CustColor">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="purple">purple</option>
+        <option value="pink">pink</option>
+        <option selected value="orange">orange</option>
+    </select>
+    <ul>
+        <li  [ngStyle]="{background:CustColor, color:'white', padding:'20px'}" >{{CustColor}} Color</li>
+    </ul>
+
+</div>
+ 

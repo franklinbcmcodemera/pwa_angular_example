@@ -1,0 +1,47 @@
+<h3>Pagos </h3>
+<form #formPayment="ngForm" (ngSubmit)="onSubmit(); formPayment.reset();">
+    <fieldset>
+        <legend>Pagos:</legend>
+        <div  style="float: left;">
+            <div>
+                <label>Name:</label><br>
+                <input type="text" name="name" #name="ngModel" [(ngModel)]="_payment.name" autocomplete="off"  required />
+                <span *ngIf="name.touched &&  !name.valid"> Requerido!</span>
+            </div>
+            
+            <div>
+                <label>Horse Power:</label><br>
+                <input type="text" name="horsePower" #horsePower="ngModel" [(ngModel)]="_payment.horsePower" autocomplete="off" pattern="[0-9]+" required />
+                <span *ngIf="horsePower.touched &&  !horsePower.valid"> Requerido y solo admite numero!</span>
+            </div>
+            
+            <div>
+                <label>Color:</label><br>
+                <input type="text" name="color" #color="ngModel" [(ngModel)]="_payment.color" autocomplete="off" pattern="[a-zA-Z#]+" required />
+                <span *ngIf="color.touched &&  !color.valid"> Requerido y solo debe ser letras!</span>
+            </div>
+            <br>
+            <input type="submit"  value="Save"   [disabled]="!formPayment.form.valid" />
+        </div>
+        <div style="float:right;">
+            <h2>Vehicle List</h2>
+            <ul *ngFor="let item of _payments; let indx = index">
+                <li><strong>Vehicle: </strong>{{item.name}}, <strong>Hp:</strong> {{item.horsePower}}, <strong>Color:</strong> {{item.color}}</li>
+            </ul>
+        </div>
+        <div style="float:right;">
+            <h2>Article List</h2>
+            <ul *ngIf="_Article">
+                <li *ngFor="let item of _Article; let indx = index">
+                    <strong>Id: </strong>{{item.id}}, <strong>Title:</strong> {{item.title}}, <strong>Body:</strong> {{item.body}}
+                </li>
+            </ul>
+            <span *ngIf="!_Article">Loading List...</span>
+        </div>
+
+        
+    </fieldset>
+
+
+
+</form>

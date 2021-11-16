@@ -1,0 +1,20 @@
+<h1>Prueba PWA Angular</h1>
+<br>
+<h2>{{title}}</h2>
+<hr>
+<h2>{{title | uppercase}}  ==> UpperCase </h2>
+<h2>{{title | lowercase }} ==> LowerCase</h2>
+<h2>{{title | titlecase }} ==> Capitalized</h2>
+<hr>
+<h2>{{CurDate| date:'fullDate' }}</h2>
+<h2>{{CurDate| date:'dd/MM/yyyy' }}</h2>
+<h2>{{CurDate| date:'dd-MMM-yyyy' }}</h2>
+<h2>{{5 | converter: 8}}</h2>
+<hr>
+<input type="text" [(ngModel)]="StoredClothe" /> <button (click)="AddStored()" >Add</button>
+<br>
+
+<p *ngIf="StoredClothe">Current Clothe to Store is: <strong>{{StoredClothe}}</strong></p>
+<ul *ngFor="let item of ListClothes; let idx = index">
+    <li>{{item}} <button (click)="RemoveItem(idx)">Delete</button></li> 
+</ul>
