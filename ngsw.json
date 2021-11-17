@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1637189798683,
+  "timestamp": 1637190156678,
   "index": "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html",
   "assetGroups": [
     {
@@ -58,9 +58,9 @@
       "patterns": [
         "https:\\/\\/jsonplaceholder\\.typicode\\.com\\/posts"
       ],
-      "strategy": "freshness",
+      "strategy": "performance",
       "maxSize": 0,
-      "maxAge": 432000000,
+      "maxAge": 864000000,
       "timeoutMs": 10000,
       "cacheQueryOptions": {
         "ignoreVary": true
