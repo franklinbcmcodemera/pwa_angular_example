@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1637190738276,
+  "timestamp": 1637191198333,
   "index": "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html",
   "assetGroups": [
     {
@@ -61,7 +61,7 @@
       "strategy": "performance",
       "maxSize": 50000,
       "maxAge": 864000000,
-      "timeoutMs": 10000,
+      "timeoutMs": 3000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
