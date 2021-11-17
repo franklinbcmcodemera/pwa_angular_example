@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1637189457907,
+  "timestamp": 1637189798683,
   "index": "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://franklinbcmcodemera.github.io/pwa_angular_example/favicon.ico",
         "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html",
-        "https://franklinbcmcodemera.github.io/pwa_angular_example/main.c4b4d29afde4b1776b3b.js",
+        "https://franklinbcmcodemera.github.io/pwa_angular_example/main.f84e685db8f2e0839db6.js",
         "https://franklinbcmcodemera.github.io/pwa_angular_example/manifest.webmanifest",
         "https://franklinbcmcodemera.github.io/pwa_angular_example/polyfills.a4021de53358bb0fec14.js",
         "https://franklinbcmcodemera.github.io/pwa_angular_example/runtime.e227d1a0e31cbccbf8ec.js",
@@ -79,8 +79,8 @@
     "https://franklinbcmcodemera.github.io/pwa_angular_example/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html": "84449c7bf6e0fa8177e07a61cba39f29c70afd85",
-    "https://franklinbcmcodemera.github.io/pwa_angular_example/main.c4b4d29afde4b1776b3b.js": "05a545380bc63d2a90dad6b9cb3b2b977749adde",
+    "https://franklinbcmcodemera.github.io/pwa_angular_example/index.html": "2368f5f4dd446858f660c566922b23c9b89884aa",
+    "https://franklinbcmcodemera.github.io/pwa_angular_example/main.f84e685db8f2e0839db6.js": "6c995019f671f9724e4da3b2297b05deabf9f52b",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/manifest.webmanifest": "63752ca03db7f4082db9a01362568c932c23d0f4",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "https://franklinbcmcodemera.github.io/pwa_angular_example/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
